@@ -1,0 +1,134 @@
+.main-header {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(
+    54deg,
+    rgba(74, 76, 179, 0.95) 34%,
+    hsla(0, 34%, 71%, 0.95)
+  );
+}
+
+.header-outer {
+  position: relative;
+}
+
+.header-wrapper {
+  display: flex;
+  margin-left: 8vw;
+}
+
+.profile-pic {
+  align-self: center;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 27px rgba(96, 96, 96, 0.34);
+  margin-top: 10px;
+  top: 40px;
+  position: relative;
+  transform: rotate(270deg);
+}
+
+.header-info {
+  color: white;
+  margin-left: 5vw;
+}
+
+.header-info .name {
+  margin-top: 20px;
+  font-size: 44px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.header-info .role {
+  font-size: 16px;
+  margin-top: 0;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.general-data {
+  margin-bottom: 20px;
+}
+
+.general-data .list dt {
+  float: left;
+  opacity: 0.4;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.general-data .list dd {
+  font-size: 18px;
+  padding-left: 100px;
+  margin-bottom: 25px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.general-data .list dd a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 936px) {
+  .profile-pic {
+    display: none;
+  }
+  .header-info {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 530px) {
+  .header-info {
+    font-size: 8vw;
+    margin-bottom: 2px;
+  }
+
+  .header-info .role {
+    display: block;
+    font-size: 15px;
+    padding-right: 140px;
+    margin-bottom: 20px;
+  }
+
+  .general-data .list dd {
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+  }
+
+  .general-data .list dt {
+    font-size: 15px;
+  }
+}
+
+.social-profile-data {
+  margin-bottom: 20px;
+}
+
+.social-profile-data a {
+  font-size: 24px;
+  margin-right: 25px;
+  opacity: 0.5;
+  color: white !important;
+}
+
+.social-profile-data a:hover {
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
